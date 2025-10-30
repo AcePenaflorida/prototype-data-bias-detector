@@ -1,22 +1,72 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# === Project-specific .gitignore ===
+# Keep newly added project files visible to Git (no global "*").
+
+# Python: byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Editor directories
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
+
+# Secrets (do not commit credentials)
+*.env
+backend/.env
+
+# Pytest
+.pytest_cache/
+
+# Misc
+*.so
+
+# Keep legacy AL rules for reference (commented)
+# ### AL ###
+# Template for AL projects for Dynamics 365 Business Central
+# launch.json folder
+# .vscode/
+# Cache folder
+# .alcache/
+# Symbols folder
+# .alpackages/
+# Snapshots folder
+# .snapshots/
+# Testing Output folder
+# .output/
+# Extension App-file
+# *.app
+# Rapid Application Development File
+# rad.json
+# Translation Base-file
+# *.g.xlf
+# License-file
+# *.flf
+# Test results file
+# TestResults.xml
